@@ -24,7 +24,7 @@ select {
   background-position: center;
   height: 800px;
 
-.top__title {
+.top__title {                            /* все стили с белым цветом применяются, просто проблема во вложенности css.  */
 color: rgba(32, 32, 39, 1);
 font-family: "Montserrat";
 font-size: 64px;
@@ -88,7 +88,7 @@ background-repeat: no-repeat;
 background-position: center;
 
 
-.product-box__title { 
+.product-box__title {                /* все стили с белым цветом применяются, просто проблема во вложенности css.  */
 color: rgba(255, 255, 255, 1);
 font-family: "Montserrat";
 font-size: 64px;
@@ -125,7 +125,6 @@ width: 378px;
 height: 473px;
 text-decoration: none;
 grid-column: span 4;
-align-self: start;
 }
 
 .product-link_big { 
@@ -134,8 +133,6 @@ align-self: start;
   height: 512px;
   text-decoration: none;
   grid-column: span 4;
-  align-self: end;
-  
 }
 
 .product-link_2row {  
@@ -154,7 +151,7 @@ width: 378px;
 height: 473px;
 
 
-.product__image { 
+.product__image {      /* все стили с белым цветом применяются, просто проблема во вложенности css.  */
 width: 378px;
 height: 314px;
 border-radius: 30px;
