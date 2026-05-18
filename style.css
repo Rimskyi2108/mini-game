@@ -22,6 +22,10 @@ select {
   padding-right: calc(50% - 600px);
 }
 
+.top__star-mobile { 
+  display: none; 
+}
+
 .star-1 {
   position: absolute;
   top: 11.75%;
@@ -91,6 +95,7 @@ select {
   height: 800px;
   position: relative;
   overflow: visible;
+  }
 
   .top__title {
     color: rgba(32, 32, 39, 1);
@@ -143,7 +148,7 @@ select {
     background: rgba(255, 255, 255, 1);
     color: rgba(32, 32, 39, 1);
   }
-}
+
 
 .animated-line {
   background-color: rgba(188, 236, 48, 1);
@@ -152,6 +157,7 @@ select {
   overflow: hidden;
   white-space: nowrap;
   z-index: 1;
+  }
 
   .animated-line__content {
     display: inline-flex;
@@ -181,7 +187,7 @@ select {
     align-items: center;
     line-height: 1;
   }
-}
+
 
 .star-6 {
   position: absolute;
@@ -264,6 +270,7 @@ select {
   box-shadow: 0px 12.61px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
   background: rgba(255, 255, 255, 1);
   height: 100%;
+  }
 
   .product__image {
     width: 378px;
@@ -311,7 +318,7 @@ select {
     letter-spacing: 0px;
     text-align: left;
   }
-}
+
 
 .star-9 {
   position: absolute;
@@ -343,11 +350,11 @@ select {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
+  }
 
   .game-box__title {
     color: rgba(255, 255, 255, 1);
     font-family: "Montserrat";
-    font-style: Bold;
     font-size: 64px;
     font-weight: 700;
     line-height: 78px;
@@ -364,7 +371,7 @@ select {
     gap: 32px;
     padding-bottom: 144px;
   }
-}
+
 
 .game {
   border-radius: 30px;
@@ -375,6 +382,7 @@ select {
   justify-content: flex-start;
   align-items: flex-start;
   height: 500px;
+  }
 
   .game__content {
     display: flex;
@@ -417,7 +425,6 @@ select {
   .game__button {
     color: rgba(255, 255, 255, 1);
     font-family: "Montserrat";
-    font-style: SemiBold;
     font-size: 24px;
     font-weight: 600;
     line-height: 141.69%;
@@ -436,7 +443,6 @@ select {
     width: 600px;
     height: 500px;
   }
-}
 
 footer {
   background: rgba(189, 237, 53, 1);
@@ -444,6 +450,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  }
 
   .footer__text {
     color: rgba(0, 0, 0, 1);
@@ -454,4 +461,5 @@ footer {
     letter-spacing: 0px;
     text-align: center;
   }
-}
+
+
