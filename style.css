@@ -6,6 +6,7 @@
 html,
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -254,6 +255,8 @@ select {
   z-index: 1;
 }
 
+
+
 .product-link:nth-child(2),
 .product-link:nth-child(5) {
   height: 512px;
@@ -270,7 +273,12 @@ select {
   box-shadow: 0px 12.61px 42.251190185546875px -7.57px rgba(0, 0, 0, 0.13);
   background: rgba(255, 255, 255, 1);
   height: 100%;
+   transition: transform 0.5s ease;
   }
+
+  .product:hover { 
+  transform: scale(1.05);
+}
 
   .product__image {
     width: 378px;
@@ -436,6 +444,11 @@ select {
     height: 66px;
     width: 247px;
     height: 66px;
+    transition: transform 0.5s ease;
+  }
+
+  .game__button:hover { 
+    transform: scale(1.1);
   }
 
   .game__image {
