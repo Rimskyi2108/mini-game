@@ -106,7 +106,54 @@ function reverseText() {
 
 // Игра 4. Камень, ножницы, бумага
 
+function startRPSGame() {
+    const options = ["камень", "ножницы", "бумага"];
+    let userScore = 0;
+    let computerScore = 0;
+    let round = 1;
 
+    alert("ИГРА 'КАМЕНЬ, НОЖНИЦЫ, БУМАГА' ДО 3 ПОБЕД!");
+
+    while (userScore < 3 && computerScore < 3) {
+        let userChoice = prompt(`РАУНД ${round}\nСчёт: ${userScore} : ${computerScore}\n\nВведите: камень, ножницы, бумага`);
+
+        if (userChoice === null) {
+            alert('Игра отменена!');
+            return;
+        }
+
+        userChoice = userChoice.toLocaleLowerCase().trim();
+
+        if (!options.includes(userChoice)) {
+            alert("Ошибка! Введите: камень, ножницы или бумага");
+            continue;
+        }
+
+        const computerChoice = options[Math.floor(Math.random() * 3)];
+
+        if (userChoice === computerChoice) {
+            alert(`Ничья! ${userChoice} = ${computerChoice}`);
+        } else if (
+            (userChoice === "камень" && computerChoice === "ножницы") ||
+            (userChoice === "ножницы" && computerChoice === "бумага") ||
+            (userChoice === "бумага" && computerChoice === "камень")
+        ) {
+            alert(`Вы выиграли! ${userChoice} победил ${computerChoice}`);
+            userScore++;
+        } else {
+            alert(`❌ Компьютер выиграл! ${computerChoice} победил ${userChoice}`);
+            computerScore++;
+        }
+
+        round++; 
+    }
+
+    if (userScore === 3) {
+        alert(`ПОБЕДА!\nФинальный счёт: ${userScore} : ${computerScore}`);
+    } else {
+        alert(`ПОРАЖЕНИЕ!\nФинальный счёт: ${userScore} : ${computerScore}`);
+    }
+}
 
 
 // Игра 5. Простая викторина
