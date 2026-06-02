@@ -167,7 +167,17 @@ select {
     height: 100%;
     padding: 27px 19px;
     box-sizing: border-box;
+    animation: scroll-left 10s linear infinite;
   }
+
+  @keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+ }
 
   .animated-line__text {
     display: inline-flex;
@@ -281,9 +291,8 @@ select {
 }
 
   .product__image {
-    width: 378px;
-    height: 314px;
     border-radius: 30px;
+    max-width: 100%
   }
 
   .product__info {

@@ -209,3 +209,15 @@ function startQuiz() {
 
     alert(`Викторина окончена!\n\nПравильных ответов: ${correctCount} из ${quiz.length}\nПроцент: ${((correctCount / quiz.length * 100)).toFixed(1)}%`);
 }
+
+
+// Игра 6. Генератор случайных цветов
+
+function changeBackgroundColor() {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+    
+    const gameCard = document.getElementById('game-6');
+    gameCard.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+}
