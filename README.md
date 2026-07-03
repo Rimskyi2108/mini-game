@@ -18,7 +18,7 @@
 
 - HTML5
 - CSS3 (Flexbox, Grid, адаптив, анимации)
-- JavaScript (DOM, события, логика игр)
+- JavaScript (DOM, события, логика игр, плавный скролл)
 
 ---
 
