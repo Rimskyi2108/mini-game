@@ -1,6 +1,6 @@
 # 🎮 Сайт мини-игр
 
-**Демо:** [Смотреть демо](https://rimskyi2108.github.io/mini-game/)
+**Демо:** [Смотреть](https://rimskyi2108.github.io/mini-game/)
 
 ---
 
