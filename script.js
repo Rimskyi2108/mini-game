@@ -11,7 +11,7 @@ function startGuessGame() {
         let userGuess = prompt('Введите ваше число (от 1 до 100):');
 
         if (userGuess === null) {                                                                   //  Если  нажал "Отмена"
-            alert('Игра отменена. Приходи ещё!');
+            alert('Игра отменена. Приходи ещё!'); 
             return;
         }
 

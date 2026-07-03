@@ -10,7 +10,7 @@
 
   .top__star {
     display: none;
-  }
+  } 
 
   .top__star-mobile {
     display: block;
@@ -47,8 +47,7 @@
     line-height: 49px;
     text-align: center;
     max-width: 262px;
-    padding-left: 40.5px;
-    padding-right: 40.5px;
+    margin: 0 auto; /* ← центрируем */
   }
 
   .top__text {
@@ -57,8 +56,7 @@
     text-align: center;
     max-height: 60px;
     max-width: 296px;
-    padding-left: 23.5px;
-    padding-right: 23.5px;
+    margin: 0 auto; /* ← центрируем */
   }
 
   .top__text br {
@@ -69,10 +67,8 @@
     width: 285px;
     height: 55px;
     font-size: 16px;
-    margin-top: 36px;
-    margin-bottom: 131px;
-    margin-left: 29px;
-    margin-right: 29px;
+    margin: 36px auto 131px auto; /* ← центрируем и убираем фиксированные отступы */
+    display: block;
   }
 
   .animated-line {
